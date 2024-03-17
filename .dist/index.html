@@ -41,8 +41,9 @@
     </div>
     
     <script>
+        require('dotenv').config();
 
-        const apiKey = "0dacddf9558fb6dcdc3addb7e17bfd97";
+        const apiKey = process.env.API_key;
         const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 
